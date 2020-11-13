@@ -1,0 +1,6 @@
+{
+  "name": "abap-advent-2020-template",
+  "image": "mcr.microsoft.com/vscode/devcontainers/javascript-node:0-12",
+  "extensions": ["larshp.vscode-abaplint"],
+  "postCreateCommand": "npm install"
+}
