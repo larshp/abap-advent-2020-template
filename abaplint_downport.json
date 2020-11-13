@@ -8,6 +8,7 @@
   },
   "dependencies": [
     {
+      "url": "https://github.com/open-abap/open-abap",
       "folder": "/deps",
       "files": "/**/*.*"
     }

@@ -9,11 +9,15 @@ NodeJS 12 installed
 
 No ABAP system required, but a lot of patience is a prerequsite
 
-## Renaming
+## Initial Setup
 
 After cloning this template repository, please rename all objects.
 
 This is done by changing the configuration in `abaplint.json` and then running `npm install && npm run rename`
+
+Enable [abaplint.app](https://github.com/marketplace/abaplint) to get nice linter errors.
+
+Adjust `abaplint.json` to your liking
 
 ## Commands
 
