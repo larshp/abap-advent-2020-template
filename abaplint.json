@@ -14,6 +14,11 @@
       "files": "/src/**/*.*"
     }
   ],
+  "rename": {
+    "output": "renamed",
+    "skip": [],
+    "patterns": [{"type": "CLAS|INTF", "oldName": "(.*)_rename", "newName": "$1_foobar"}]
+  },
   "syntax": {
     "version": "v740sp08",
     "errorNamespace": "^(Z|Y|LCL_|TY_|LIF_)",

@@ -7,6 +7,7 @@
     "downport": "rm -rf downport && cp src -r downport && abaplint --fix abaplint_downport.json",
     "unit": "rm -rf output && abap_transpile && echo RUNNING && node output/index.js",
     "lint": "abaplint",
+    "rename": "abaplint --rename",
     "test": "npm run lint && npm run downport && npm run unit"
   },
   "author": "",
