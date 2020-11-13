@@ -31,4 +31,4 @@ Adjust `abaplint.json` to your liking
 
 `npm test` does linting, downporting and unit testing in that sequence
 
-`./run 01` todo
+`npm run input -- 01` to run day 01 with input from `/input/day01.txt`
