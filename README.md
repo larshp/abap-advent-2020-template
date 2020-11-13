@@ -4,9 +4,11 @@
 Lets do it the difficult way! In ABAP running on [NodeJS](https://nodejs.org)
 
 ## Prerequsites
+
 NodeJS 12 installed
 
-## Setup
+## Renaming
+
 After cloning this template repository, please rename all objects.
 
 This is done by changing the configuration in `abaplint.json` and then running `npm install && npm run rename`
