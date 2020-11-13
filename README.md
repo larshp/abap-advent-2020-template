@@ -7,6 +7,8 @@ Lets do it the difficult way! In ABAP running on [NodeJS](https://nodejs.org)
 
 NodeJS 12 installed
 
+No ABAP system required, but a lot of patience is a prerequsite
+
 ## Renaming
 
 After cloning this template repository, please rename all objects.
