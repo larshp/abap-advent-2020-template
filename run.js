@@ -23,5 +23,10 @@ console.log("Method: " + methodName.toUpperCase());
 console.log("Input: " + inputFile);
 
 const result = instance[methodName]( {input: input} );
+const output = abap.Console.get();
+if (output && output !== "") {
+  console.dir(output);
+}
+
 console.log("\nResult:")
 console.log(result);
