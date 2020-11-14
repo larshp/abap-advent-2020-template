@@ -11,10 +11,10 @@
     "test": "npm run lint && npm run downport && npm run unit"
   },
   "author": "",
-  "license": "ISC",
+  "license": "Unlicense",
   "dependencies": {
     "@abaplint/cli": "^2.60.2",
-    "@abaplint/runtime": "^0.7.2",
-    "@abaplint/transpiler-cli": "^0.7.2"
+    "@abaplint/runtime": "^0.7.6",
+    "@abaplint/transpiler-cli": "^0.7.5"
   }
 }
