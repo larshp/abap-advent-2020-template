@@ -8,7 +8,8 @@
     "unit": "rm -rf output && abap_transpile && echo RUNNING && node output/index.js",
     "lint": "abaplint",
     "rename": "abaplint --rename && rm -rf src && cp -r renamed/src . && abaplint --fix",
-    "test": "npm run lint && npm run downport && npm run unit"
+    "test": "npm run lint && npm run downport && npm run unit",
+    "input": "node run.js"
   },
   "author": "",
   "license": "Unlicense",
