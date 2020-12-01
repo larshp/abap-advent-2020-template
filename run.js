@@ -9,7 +9,8 @@ if (files.length !== 1) {
   throw "Class not found for this day";
 }
 
-global.abap = require("@abaplint/runtime");
+const req = require("@abaplint/runtime");
+global.abap = new req.ABAP();
 const clas = require("." + path.sep + "output" + path.sep + files[0]);
 
 const inputFile = "." + path.sep + "input" + path.sep + "day" + day + ".txt";
@@ -23,7 +24,7 @@ console.log("Method: " + methodName.toUpperCase());
 console.log("Input: " + inputFile);
 
 const result = instance[methodName]( {input: input} );
-const output = abap.Console.get();
+const output = abap.console.get();
 if (output && output !== "") {
   console.dir(output);
 }
