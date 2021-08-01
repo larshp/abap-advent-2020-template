@@ -5,7 +5,7 @@
   "description": "Advent of Code 2020 - ABAP template",
   "scripts": {
     "downport": "rm -rf downport && cp src -r downport && abaplint --fix abaplint_downport.json",
-    "unit": "rm -rf output && abap_transpile && echo RUNNING && node output/index.js",
+    "unit": "rm -rf output && abap_transpile && echo RUNNING && node output/index.mjs",
     "lint": "abaplint",
     "rename": "abaplint --rename && rm -rf src && cp -r renamed/src . && abaplint --fix",
     "test": "npm run lint && npm run downport && npm run unit",
@@ -14,8 +14,8 @@
   "author": "",
   "license": "Unlicense",
   "dependencies": {
-    "@abaplint/cli": "^2.74.11",
-    "@abaplint/runtime": "^1.2.28",
-    "@abaplint/transpiler-cli": "^1.2.28"
+    "@abaplint/cli": "^2.76.7",
+    "@abaplint/runtime": "^1.4.14",
+    "@abaplint/transpiler-cli": "^1.4.14"
   }
 }
