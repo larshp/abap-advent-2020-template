@@ -7,16 +7,3 @@ updates:
     time: "04:00"
   open-pull-requests-limit: 10
   versioning-strategy: increase
-  ignore:
-  - dependency-name: "@abaplint/cli"
-    versions:
-    - 2.66.2
-    - 2.69.7
-  - dependency-name: "@abaplint/transpiler-cli"
-    versions:
-    - 1.2.14
-    - 1.2.7
-  - dependency-name: "@abaplint/runtime"
-    versions:
-    - 1.2.14
-    - 1.2.7
