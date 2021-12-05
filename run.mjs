@@ -1,5 +1,6 @@
-const fs = require("fs");
-const path = require("path");
+import fs from "fs";
+import path from "path";
+import { ABAP } from "@abaplint/runtime";
 
 async function run() {
   const day = process.argv[2];
@@ -7,14 +8,14 @@ async function run() {
 
   const files = fs
     .readdirSync("output")
-    .filter((n) => n.includes("day" + day) && n.endsWith(".clas.js"));
+    .filter((n) => n.includes("day" + day) && n.endsWith(".clas.mjs"));
   if (files.length !== 1) {
     throw "Class not found for this day";
   }
 
-  const req = require("@abaplint/runtime");
-  global.abap = new req.ABAP();
-  const clas = require("." + path.sep + "output" + path.sep + files[0]);
+  const abap = new ABAP();
+  global.abap = abap;
+  const clas = await import("." + path.sep + "output" + path.sep + files[0]);
 
   const inputFile = "." + path.sep + "input" + path.sep + "day" + day + ".txt";
   const input = fs.readFileSync(inputFile).toString();
