@@ -223,7 +223,7 @@
       "ignoreKeywords": []
     },
     "line_break_multiple_parameters": true,
-    "line_break_style": true,
+    "line_break_style": false,
     "line_length": {
       "exclude": [],
       "severity": "Error",
